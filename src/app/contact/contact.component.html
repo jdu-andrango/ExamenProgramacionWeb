@@ -1,0 +1,23 @@
+
+<div class="container">
+  <h2>formulario reactivo</h2>
+
+  <form [formGroup]="form" (ngSubmit)="validarFormulario()">
+    <div>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" formControlName="name"pInputText>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="number" id="email" formControlName="email"pInputText>
+    </div>
+    <div>
+      <label for="message">mensaje</label>
+      <input type="text" id="message" sformControlName="message"pInputText>
+    </div>
+
+    <button type="submit"pButton pRipple>Enviar</button>
+  </form>
+
+
+</div>
